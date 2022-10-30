@@ -18,6 +18,7 @@
 
 }
 
+/* aliging the infographic and the splitting the page in half */
 .infographic {
   flex: 1;
   padding-right: 20px;
@@ -36,6 +37,8 @@
   flex-direction: row;
 }
 
+
+/* once again aligning then splitting the page */
 .sumsubVideo {
   display: flex; 
   flex-direction: row;
@@ -59,7 +62,7 @@
 }
 
 
-
+/* making the list of items apear neatly for the contact page */
 .contactList {
   
   display: block;
@@ -70,7 +73,7 @@
   background: #4C566A
 }
 
-
+/* -----Start of timeline css code------- */
 .timeline {
   display: flex;
   justify-content: center;
@@ -178,7 +181,9 @@
   right: -45px;
 }
 
+/* -----End of timeline css code------- */
 
+/* making the lists appear split up and ensuring there is white space between them to make it easer to read */
 .fixingLists {
   display: grid;
   grid-row-gap: 1em;
@@ -192,7 +197,7 @@
 }
 
 
-
+/* basic navbar alligning */
 .navBar {
   background-color: #4C566A;
   display: flex;
@@ -200,6 +205,8 @@
   align-items: center;
 }
 
+
+/* removing the drop down menu if it isnt in mobile view */
 .navBar #dropdownMenu{
   overflow: hidden;
   display: none;
@@ -225,6 +232,8 @@
 
 }
 
+
+/* position the hamburger menu correctly */
 .navBar a.icon {
   
   display: none;
@@ -257,6 +266,7 @@ nav h1 {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 li a {
   color: #3366CC
 }
@@ -305,7 +315,7 @@ button:hover {
 
 
 
-
+/* creating specific views for mobile and tablet view */
 @media only screen and (max-width: 768px){
   html{
     font: 17px "Courier New", Courier, monospace;
@@ -323,7 +333,7 @@ button:hover {
     max-width: 90%
   }
 
-
+  /* making the home page appear vertically */
   .imageContainer {
     flex-direction:column;
   }
@@ -349,6 +359,7 @@ button:hover {
     max-width: 100%;
   }
 
+  /* making the lists appear vertically  */
   .fixingLists {
     display: block;
     margin: 0;
@@ -359,6 +370,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 425px){
+
+  /* enabling the dropdown menu */
   .navBar {
     display: block;
     overflow: hidden;
